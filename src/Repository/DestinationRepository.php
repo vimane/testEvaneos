@@ -1,4 +1,9 @@
 <?php
+namespace Core\Repository;
+
+use Core\Repository\Repository;
+use Core\Helper\SingletonTrait;
+use Core\Entity\Destination;
 
 class DestinationRepository implements Repository
 {
@@ -13,9 +18,9 @@ class DestinationRepository implements Repository
      */
     public function __construct()
     {
-        $this->country = Faker\Factory::create()->country;
+        $this->country = \Faker\Factory::create()->country;
         $this->conjunction = 'en';
-        $this->computerName = Faker\Factory::create()->slug();
+        $this->computerName = \Faker\Factory::create()->slug();
     }
 
     /**

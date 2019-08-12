@@ -1,4 +1,6 @@
 <?php
+namespace Core\Repository;
+
 
 interface Repository
 {

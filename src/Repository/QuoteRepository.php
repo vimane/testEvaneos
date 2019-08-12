@@ -1,4 +1,9 @@
 <?php
+namespace Core\Repository;
+
+use Core\Repository\Repository;
+use Core\Helper\SingletonTrait;
+use Core\Entity\Quote;
 
 class QuoteRepository implements Repository
 {
@@ -14,11 +19,11 @@ class QuoteRepository implements Repository
     public function __construct()
     {
         // DO NOT MODIFY THIS METHOD
-        $generator = Faker\Factory::create();
+        $generator = \Faker\Factory::create();
 
         $this->siteId = $generator->numberBetween(1, 10);
         $this->destinationId = $generator->numberBetween(1, 200);
-        $this->date = new DateTime();
+        $this->date = new \DateTime();
     }
 
     /**

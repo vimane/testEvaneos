@@ -1,4 +1,13 @@
 <?php
+namespace Core;
+
+use Core\Entity\Template;
+use Core\Context\ApplicationContext;
+use Core\Entity\Quote;
+use Core\Repository\QuoteRepository;
+use Core\Repository\SiteRepository;
+use Core\Repository\DestinationRepository;
+
 
 class TemplateManager
 {

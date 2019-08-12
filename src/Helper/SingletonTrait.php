@@ -1,4 +1,5 @@
 <?php
+namespace Core\Helper;
 
 trait SingletonTrait
 {
